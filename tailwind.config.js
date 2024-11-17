@@ -4,9 +4,28 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/container/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: "true",
+      padding: "2rem",
+      // screens: {
+      //   "2xl": "1400px",
+      // },
+    },
     extend: {
+      screens: {
+        xs: {
+          max: "360px",
+        },
+        sm: {
+          max: "550px",
+        },
+        md: {
+          max: "1023px",
+        },
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
