@@ -37,14 +37,14 @@ const Testimoni = ({ ...props }) => {
 
   return (
     <>
-      <div class="absolute top-0 left-0 w-full h-1/4 overflow-hidden -z-10">
-        <div class="particle w-2 h-2 bg-indigo-400"></div>
-        <div class="particle w-3 h-3 bg-purple-400"></div>
-        <div class="particle w-1.5 h-1.5 bg-pink-400"></div>
-        <div class="particle w-4 h-4 bg-blue-400"></div>
-        <div class="particle w-2.5 h-2.5 bg-green-400"></div>
-        <div class="particle w-3 h-3 bg-yellow-400"></div>
-        <div class="particle w-1 h-1 bg-red-400"></div>
+      <div className="absolute top-0 left-0 w-full h-1/4 overflow-hidden -z-10">
+        <div className="particle w-2 h-2 bg-indigo-400"></div>
+        <div className="particle w-3 h-3 bg-purple-400"></div>
+        <div className="particle w-1.5 h-1.5 bg-pink-400"></div>
+        <div className="particle w-4 h-4 bg-blue-400"></div>
+        <div className="particle w-2.5 h-2.5 bg-green-400"></div>
+        <div className="particle w-3 h-3 bg-yellow-400"></div>
+        <div className="particle w-1 h-1 bg-red-400"></div>
       </div>
       <div className="px-28 sm:px-5">
         <span className="capitalize text-[100px] font-bold sm:text-6xl">
@@ -110,14 +110,14 @@ const Testimoni = ({ ...props }) => {
           </div>
         </div>
       </div>
-      <div class="absolute bottom-0 left-0 w-full h-1/4 overflow-hidden -z-10">
-        <div class="particle w-2 h-2 bg-indigo-400"></div>
-        <div class="particle w-3 h-3 bg-purple-400"></div>
-        <div class="particle w-1.5 h-1.5 bg-pink-400"></div>
-        <div class="particle w-4 h-4 bg-blue-400"></div>
-        <div class="particle w-2.5 h-2.5 bg-green-400"></div>
-        <div class="particle w-3 h-3 bg-yellow-400"></div>
-        <div class="particle w-1 h-1 bg-red-400"></div>
+      <div className="absolute bottom-0 left-0 w-full h-1/4 overflow-hidden -z-10">
+        <div className="particle w-2 h-2 bg-indigo-400"></div>
+        <div className="particle w-3 h-3 bg-purple-400"></div>
+        <div className="particle w-1.5 h-1.5 bg-pink-400"></div>
+        <div className="particle w-4 h-4 bg-blue-400"></div>
+        <div className="particle w-2.5 h-2.5 bg-green-400"></div>
+        <div className="particle w-3 h-3 bg-yellow-400"></div>
+        <div className="particle w-1 h-1 bg-red-400"></div>
       </div>
     </>
   );

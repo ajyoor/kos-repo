@@ -7,12 +7,12 @@ const Discover = ({ keys, data, title }) => {
   const router = useRouter();
   return (
     <div key={keys}>
-      <div class="absolute top-0 left-0 w-full h-1/4 overflow-hidden -z-10">
-        <div class="geometric bg-blue-400 w-10 h-0.5"></div>
-        <div class="geometric bg-indigo-400 w-8 h-0.5"></div>
-        <div class="geometric bg-purple-400 w-6 h-0.5"></div>
-        <div class="geometric bg-green-400 w-12 h-0.5"></div>
-        <div class="geometric bg-red-400 w-8 h-0.5"></div>
+      <div className="absolute top-0 left-0 w-full h-1/4 overflow-hidden -z-10">
+        <div className="geometric bg-blue-400 w-10 h-0.5"></div>
+        <div className="geometric bg-indigo-400 w-8 h-0.5"></div>
+        <div className="geometric bg-purple-400 w-6 h-0.5"></div>
+        <div className="geometric bg-green-400 w-12 h-0.5"></div>
+        <div className="geometric bg-red-400 w-8 h-0.5"></div>
       </div>
       <div className="px-28 my-40 sm:px-5 sm:w-auto">
         <span
@@ -78,12 +78,12 @@ const Discover = ({ keys, data, title }) => {
           })}
         </div>
       </div>
-      <div class="absolute bottom-0 left-0 w-full h-1/4 overflow-hidden -z-10">
-        <div class="geometric bg-blue-400 w-10 h-0.5"></div>
-        <div class="geometric bg-indigo-400 w-8 h-0.5"></div>
-        <div class="geometric bg-purple-400 w-6 h-0.5"></div>
-        <div class="geometric bg-green-400 w-12 h-0.5"></div>
-        <div class="geometric bg-red-400 w-8 h-0.5"></div>
+      <div className="absolute bottom-0 left-0 w-full h-1/4 overflow-hidden -z-10">
+        <div className="geometric bg-blue-400 w-10 h-0.5"></div>
+        <div className="geometric bg-indigo-400 w-8 h-0.5"></div>
+        <div className="geometric bg-purple-400 w-6 h-0.5"></div>
+        <div className="geometric bg-green-400 w-12 h-0.5"></div>
+        <div className="geometric bg-red-400 w-8 h-0.5"></div>
       </div>
     </div>
   );

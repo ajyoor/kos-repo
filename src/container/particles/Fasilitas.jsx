@@ -31,12 +31,12 @@ const Facility = [
 const Fasilitas = () => {
   return (
     <>
-      {/* <div class="absolute top-0 left-0 w-full h-1/4 overflow-hidden -z-10">
-        <div class="triangle bg-blue-400"></div>
-        <div class="triangle bg-pink-400"></div>
-        <div class="triangle bg-green-400"></div>
-        <div class="triangle bg-yellow-400"></div>
-        <div class="triangle bg-purple-400"></div>
+      {/* <div className="absolute top-0 left-0 w-full h-1/4 overflow-hidden -z-10">
+        <div className="triangle bg-blue-400"></div>
+        <div className="triangle bg-pink-400"></div>
+        <div className="triangle bg-green-400"></div>
+        <div className="triangle bg-yellow-400"></div>
+        <div className="triangle bg-purple-400"></div>
       </div> */}
       <div className="px-28 sm:px-5">
         <span className="capitalize text-[100px] font-bold sm:text-6xl">
@@ -55,9 +55,9 @@ const Fasilitas = () => {
           <Image
             width={400}
             height={400}
-            src="https://random-image-pepebigotes.vercel.app/api/random-image"
+            src="/sidoarjo/kospilarputih/kpp2.jpg"
             alt="img"
-            className="h-[400px] sm:max-w-[500px] sm:h-[200px] rounded-tl-xl rounded-br-xl shadow-lg sm:hidden"
+            className="h-[400px] sm:max-w-[500px] sm:h-[200px] rounded-tl-xl rounded-br-xl shadow-lg sm:hidden object-cover"
           />
           <div className="flex flex-wrap justify-between w-full gap-x-3 sm:gap-y-3">
             {Facility.map((item, idx) => {
@@ -87,12 +87,12 @@ const Fasilitas = () => {
           </div>
         </div>
       </div>
-      {/* <div class="absolute bottom-0 left-0 w-full h-1/4 overflow-hidden -z-10">
-        <div class="triangle bg-indigo-400"></div>
-        <div class="triangle bg-pink-400"></div>
-        <div class="triangle bg-blue-400"></div>
-        <div class="triangle bg-purple-400"></div>
-        <div class="triangle bg-yellow-400"></div>
+      {/* <div className="absolute bottom-0 left-0 w-full h-1/4 overflow-hidden -z-10">
+        <div className="triangle bg-indigo-400"></div>
+        <div className="triangle bg-pink-400"></div>
+        <div className="triangle bg-blue-400"></div>
+        <div className="triangle bg-purple-400"></div>
+        <div className="triangle bg-yellow-400"></div>
       </div> */}
     </>
   );

@@ -23,6 +23,14 @@ export const Data = [
           "/sidoarjo/kospilarputih/kpp1.jpg",
           "/sidoarjo/kospilarputih/kpp2.jpg",
         ],
+        detailKos: [
+          { Bedrooms: 1 },
+          { Bathrooms: 1 },
+          { Price: 1 },
+          { Year: 1 },
+          { Size: 1 },
+          { Land: 1 },
+        ],
       },
       {
         title: "Kos Putih",
@@ -37,7 +45,7 @@ export const Data = [
             height="400"
             style={{
               width: "100%",
-              height: "100%",
+              height: "300px",
               border: 0,
               borderRadius: "10px",
             }}
@@ -52,6 +60,14 @@ export const Data = [
           "/sidoarjo/kostputih/kp3.jpg",
           "/sidoarjo/kostputih/kp4.jpg",
           "/sidoarjo/kostputih/kp5.jpg",
+        ],
+        detailKos: [
+          { Bedrooms: 1 },
+          { Bathrooms: 1 },
+          { Price: 1 },
+          { Year: 1 },
+          { Size: 1 },
+          { Land: 1 },
         ],
       },
     ],
@@ -71,7 +87,7 @@ export const Data = [
             height="400"
             style={{
               width: "100%",
-              height: "100%",
+              height: "300px",
               border: 0,
               borderRadius: "10px",
             }}
@@ -89,6 +105,14 @@ export const Data = [
           "/kediri/kostvip/kv5.jpg",
           "/kediri/kostvip/kv6.jpg",
         ],
+        detailKos: [
+          { Bedrooms: 1 },
+          { Bathrooms: 1 },
+          { Price: 1 },
+          { Year: 1 },
+          { Size: 1 },
+          { Land: 1 },
+        ],
       },
       {
         title: "Rumah Ijoe 2",
@@ -102,7 +126,7 @@ export const Data = [
             height="400"
             style={{
               width: "100%",
-              height: "100%",
+              height: "300px",
               border: 0,
               borderRadius: "10px",
             }}
@@ -119,6 +143,14 @@ export const Data = [
           "/kediri/rumahijoe/ijo4.jpeg",
           "/kediri/rumahijoe/ijo5.jpeg",
           "/kediri/rumahijoe/ijo6.jpeg",
+        ],
+        detailKos: [
+          { Bedrooms: 1 },
+          { Bathrooms: 1 },
+          { Price: 1 },
+          { Year: 1 },
+          { Size: 1 },
+          { Land: 1 },
         ],
       },
     ],
@@ -181,7 +213,7 @@ const ContentContainer = () => {
       >
         <div className="block sm:hidden">
           {/* welcome to your new */}
-          <div className="flex gap-8 mr-20 justify-end mts-10 h-[400px] relative sm:h-fit sm:m-0">
+          <div className="flex gap-8 mr-20 justify-end h-[400px] relative sm:h-fit sm:m-0">
             <Image
               width={300}
               height={500}
@@ -201,7 +233,7 @@ const ContentContainer = () => {
             </div>
           </div>
           {/* homes made for you & image selected */}
-          <div className="flex justify-between sm:flex-col">
+          <div className="flex justify-between sm:flex-col h-[200px]">
             <div className="capitalize pl-28 flex flex-col -mt-[370px] sm:px-5 sm:mt-0 w-[80%]">
               <GiDeathStar className="sm:w-16 sm:mx-auto" size={80} />
               <span className="font-medium text-[60px] sm:text-[50px]">
@@ -210,31 +242,31 @@ const ContentContainer = () => {
               <span className="italic font-semibold text-orange-500 text-[150px] -mt-8 sm:text-[100px]">
                 made
               </span>
-              <span className="flex items-center gap-5 font-bold text-[150px] -mt-8 sm:text-[80px]">
+              <span className="flex items-center gap-5 font-bold text-[120px] -mt-8 sm:text-[80px]">
                 <BsArrowDownRight className="-rotate-45 sm:w-10" />
                 for you
               </span>
             </div>
             {/* image selected */}
-            <div className="flex items-center gap-16 pr-28 -mt-56 sm:hidden z-20">
-              {Array(3)
-                .fill(
-                  "https://random-image-pepebigotes.vercel.app/api/random-image"
-                )
-                .map((key, idx) => {
-                  if (idx + 1 === selectedDataSection1)
-                    return (
-                      <div key={idx}>
-                        <Image
-                          width={450}
-                          height={500}
-                          src={key}
-                          alt="image"
-                          className="sm:!w-60 sm:!h-60 shadow-xl rounded-md"
-                        />
-                      </div>
-                    );
-                })}
+            <div className="flex items-center gap-12 pr-28 -mt-56 sm:hidden z-20">
+              {Array(
+                "/kediri/kostvip/kv1.jpg",
+                "/kediri/kostvip/kv4.jpg",
+                "/kediri/rumahijoe/ijo3.jpeg"
+              ).map((key, idx) => {
+                if (idx + 1 === selectedDataSection1)
+                  return (
+                    <div key={idx}>
+                      <Image
+                        width={500}
+                        height={500}
+                        src={key}
+                        alt="image"
+                        className="sm:!w-60 sm:!h-60 max-w-[400px] masx-h-[400px] shadow-xl rounded-md"
+                      />
+                    </div>
+                  );
+              })}
               <div className="flex flex-col gap-3">
                 {Array(3)
                   .fill()
